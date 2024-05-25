@@ -56,6 +56,10 @@ public class GeneratorMybatisPlus {
         globalConfig.setAuthor("tong");
         // 文件覆盖
         globalConfig.setFileOverride(true);
+        //通用字段映射
+        globalConfig.setBaseResultMap(true);
+        //通用结果列映射
+        globalConfig.setBaseColumnList(true);
         // 生成后打开文件
         globalConfig.setOpen(false);
         // 自定义文件名风格，%s自动填充表实体属性
